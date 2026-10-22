@@ -1,0 +1,16 @@
+engine/data/
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.log
+*.exe
+*.pem
+*.key
+__pycache__/
+*.py[cod]

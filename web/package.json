@@ -1,0 +1,25 @@
+{
+  "name": "desk-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 3210 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "test": "node --test tests/agentLog.test.mjs tests/tradingMode.test.mjs tests/marketResult.test.mjs tests/liveCandles.test.mjs",
+    "test:browser": "node --test tests/agentRail.browser.mjs tests/files.browser.mjs tests/history.browser.mjs tests/optimization.browser.mjs"
+  },
+  "dependencies": {
+    "lightweight-charts": "4.2.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.6"
+  }
+}
